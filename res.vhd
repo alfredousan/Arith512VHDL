@@ -1,15 +1,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity restador is
+entity res is
     Port ( A : in STD_LOGIC;
        B : in STD_LOGIC;
        Cin : in STD_LOGIC;
        Cout : out STD_LOGIC;
        S : out STD_LOGIC);
-end restador;
+end res;
 
-architecture Behavioral of restador is
+architecture Behavioral of res is
 signal axb, na, naab, naxb, canx: STD_LOGIC;
 begin
 axb <= A xor B;
